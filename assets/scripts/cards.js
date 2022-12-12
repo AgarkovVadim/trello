@@ -17,9 +17,9 @@ btns.forEach((btn, key) => {
         textareas[key].addEventListener('input', (event) => {
             value = event.target.value
             if (value) {
-                addBtns[key].style.display = 'block'
+                addBtns[key].style.display = 'block';
             } else {
-                addBtns[key].style.display = 'none'
+                addBtns[key].style.display = 'none';
             };
         });
     });
@@ -29,15 +29,15 @@ cancelBtns.forEach((cancelBtns, key) => {
     cancelBtns.addEventListener('click', () => {
         textareas[key].value = '';
         textareas[key].style.display = 'none';
-        cancelBtns.style.display = 'none'
-        addBtns[key].style.display = 'none'
+        cancelBtns.style.display = 'none';
+        addBtns[key].style.display = 'none';
         btns[key].style.display = 'block';
     });
 });
 
 addBtns.forEach((addBtns, key) => {
     addBtns.addEventListener('click', function () {
-        let newItem = document.createElement('div');
+        const newItem = document.createElement('div');
         newItem.classList.add('list-item');
         newItem.draggable = true;
         newItem.id = idGenerator();
@@ -69,9 +69,9 @@ newBoard.addEventListener('click', () => {
 });
 
 function idGenerator() {
-    let idItems = document.querySelectorAll('.list-item');
+    const idItems = document.querySelectorAll('.list-item');
     let newId;
-    let id = [];
+    const id = [];
     for (let i = 0; i < idItems.length; i++) {
         let isId = idItems[i].id;
         id.push(isId);
