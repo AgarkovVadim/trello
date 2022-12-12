@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/scc/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <div class="boards">
+            <div class="board-item" id="b1">
+                <span class="tittle" contenteditable="true">Введите название доски</span>
+                    <div class="lists">
+                        <!-- <div class="task-item"> -->
+                            <div class='list-item' draggable="true" id="b0" >Название</div>    
+                        <!-- </div> -->
+                    </div>
+                    <div class="form">
+                        <textarea class="textarea" placeholder="введите детали этой карточки"></textarea>
+                    </div>
+                    <div class="buttons">
+                        <button class="add-btn">Добавить карточку</button>                    
+                        <button class="add-item-btn"><span>+</span>Добавить карточку</button>
+                        <button class="cansel-item-btn">Отмена</button>                    
+                    </div>
+            </div>
+            <div class="board-item" id="b2">
+                <span class="tittle" contenteditable="true">Введите название доски</span>
+                    <div class="lists">
+                        
+                            <div class='list-item' draggable="true" id="b1" >Название</div>    
+                        
+                    </div>
+                    <div class="form">
+                        <textarea class="textarea" draggable="true" placeholder="введите детали этой карточки"></textarea>
+                    </div>
+                <div class="buttons">
+                    <button class="add-btn"> Добавить карточку</button>                    
+                    <button class="add-item-btn"><span>+</span>Добавить карточку</button>
+                    <button class="cansel-item-btn">Отмена</button>                    
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <button class="add-board-btn">Добавить Доску</button>                        
+        </div>
+    </div>
+</body>
+<script defer src="/assets/scripts/cards.js" ></script>
+<script src="/assets/scripts/Drag'N'Drop.js"></script>
+    
+   
+  

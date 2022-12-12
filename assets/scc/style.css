@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    margin:30px;
+    background: url(/assets/images/16747_just-do-it-shia-labeouf-wallpapers_3440x1440_h.jpg);
+}
+
+/* APP */
+.app{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 0;
+}
+
+.boards{
+    display: flex;
+    max-width: 1000px;
+    justify-content:flex-start;
+    margin-bottom: 60px;
+      
+}
+
+/* BOARDS */
+
+
+.board-item{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: black;
+    border-radius: 10px;
+    background-color:rgba(84, 128, 211, 0.511);
+    padding: 20px;
+    margin:30px;
+    }
+
+.task-item{
+    min-height: 30px;
+    margin: 10px;      
+}
+
+
+.lists{
+min-height: 60px;
+padding: 5px;
+padding-bottom: 30px;
+
+}
+
+
+
+
+
+.tittle{
+    color: rgb(44, 43, 43);
+    border-style: hidden;
+    margin: 10px;
+    margin-top: 5px;
+    size: 15px;
+}
+
+/* LIST */
+.list-item{
+    background-color: var(--ds-surface-raised,#fff);
+    border-radius: 3px;
+    box-shadow: var(--ds-shadow-raised,0 1px 0 #091e4240);
+    color: var(--ds-text,inherit);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    max-width: 300px;
+    min-height: 20px;
+    position: relative;
+    z-index: 0;
+
+}
+
+/* FORM */
+.form {
+    border-radius: 3px;
+    /* margin: auto; */
+}
+
+.textarea {
+    display:none;
+    resize: none;
+    height: 60px;
+    border-radius: 3px;
+    background: white;
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    /* margin: auto; */
+}
+
+.add-btn{
+    cursor: pointer;
+}
+
+.add-item-btn{
+    display : none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.cansel-item-btn{
+    float: left;
+    display: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.add-board-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+
